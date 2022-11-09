@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 
 import { getFirestore } from "firebase/firestore";
-
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDIMSx2A7o2vfRh0fPYj07H4yw3AU2TMJ4",
   authDomain: "miniblog-4f3a3.firebaseapp.com",
@@ -11,8 +11,9 @@ const firebaseConfig = {
   appId: "1:621849128628:web:18ea634fc704d1c5e531e1"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
-export { db }; 
+export { db };
